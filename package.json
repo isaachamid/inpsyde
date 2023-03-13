@@ -1,0 +1,81 @@
+{
+  "name": "site-one",
+  "version": "1.0.0",
+  "description": "1. sudo apt -y install software-properties-common     2. sudo add-apt-repository ppa:ondrej/php     3. sudo apt-get update     4. sudo apt -y install php7.4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/ivy-man.freelancer/wordpress-template.git"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "PHP",
+    "composer",
+    "gulp",
+    "es6",
+    "scss"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.5.0",
+    "browserify-shim": "^3.8.14",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-options": "^1.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.9",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "es2017",
+      "stage-3"
+    ],
+    "plugins": [
+      [
+        "transform-runtime",
+        {
+          "regenerator": true
+        }
+      ]
+    ]
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "license": "GPL-3.0",
+  "author": "Hamed Motallebi",
+  "bugs": {
+    "url": "https://gitlab.com/ivy-man.freelancer/wordpress-template/issues"
+  },
+  "homepage": "https://gitlab.com/ivy-man.freelancer/wordpress-template#readme",
+  "dependencies": {}
+}

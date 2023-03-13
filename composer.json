@@ -1,0 +1,26 @@
+{
+    "name": "hamed/plugin-template",
+    "description": "Template Plugin",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "ivy-man",
+            "email": "hmd.ivy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "./inc",
+            "Brain\\": "./vendor/brain"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "8.5.x-dev"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
